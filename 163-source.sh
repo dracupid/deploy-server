@@ -16,8 +16,7 @@ cat /etc/apt/sources.list | grep 'mirrors.163.com' >/dev/null 2>&1 || {
     deb-src http://mirrors.163.com/ubuntu/ wily-backports main restricted universe multiverse
 
     "
-
-    sudo echo -e "${content}\n`cat ${source_file}`" > ${source_file}
+    echo -e "${content}\n`cat ${source_file}`" | sudo tee -a ${source_file}
     sudo apt-get update
     echo "Done!"
     exit 0
