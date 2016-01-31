@@ -1,6 +1,8 @@
 #! /bin/bash
 
-hash git >/dev/null 2>&1 || {
-    echo "git is not installed, installing..."
-    sudo apt-get install -y git
-}
+if [ $1 = 'ppa' ]; then
+    sudo add-apt-repository ppa:git-core/ppa
+    sudo apt-get update
+fi
+
+sh `dirname $0`/touch_tool.sh git git

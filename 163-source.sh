@@ -17,7 +17,8 @@ cat /etc/apt/sources.list | grep 'mirrors.163.com' >/dev/null 2>&1 && {
 
     "
 
-    echo -e "${content}\n`cat ${source_file}`" > ${source_file}
+    sudo echo -e "${content}\n`cat ${source_file}`" > ${source_file}
+    sudo apt-get update
     echo "Done!"
     exit 0
 }
