@@ -2,7 +2,7 @@
 
 source_file='/etc/apt/sources.list'
 
-cat /etc/apt/sources.list | grep 'mirrors.163.com' >/dev/null 2>&1 && {
+cat /etc/apt/sources.list | grep 'mirrors.163.com' >/dev/null 2>&1 || {
     content="# 163 mirror see: http://mirrors.163.com/.help/ubuntu.html
     deb http://mirrors.163.com/ubuntu/ wily main restricted universe multiverse
     deb http://mirrors.163.com/ubuntu/ wily-security main restricted universe multiverse
