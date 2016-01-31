@@ -8,6 +8,8 @@ $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools
 # install https://github.com/zsh-users/zsh-syntax-highlighting
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH}/custom/plugins/zsh-syntax-highlighting
 
-$ sed -i '' 's/.*plugins=.*/plugins=(git zsh_reload colored-man-pages zsh-syntax-highlighting)/' ~/.zshrc
+# update ~/.zshrc
+sed -i '' 's/.*plugins=.*/plugins=(git zsh_reload colored-man-pages zsh-syntax-highlighting)/' ~/.zshrc
+sed -i '' 's/.*ZSH_THEME=.*/ZSH_THEME=ys/' ~/.zshrc
 
 source ~/.zshrc
