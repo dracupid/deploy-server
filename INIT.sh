@@ -13,3 +13,7 @@ cd ~/deploy-server
 
 # 安装add-apt-repository
 ./touch_tool add-apt-repository python-software-properties
+
+# 解决Setting locale failed.
+echo "export LC_ALL=C" >> ~/.bashrc
+source ~/.bashrc
