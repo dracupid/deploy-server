@@ -17,5 +17,8 @@ if [ ! $1 ]; then
 elif [ ! $2 ]; then
     install $1 $1
 else
-    install $1 $2
+    if [ $3 ]; then
+        install $1 $2 $3
+    else
+        install $1 $2
 fi

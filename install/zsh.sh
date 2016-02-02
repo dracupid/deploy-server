@@ -15,4 +15,5 @@ git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH}/custom/p
 sed -i 's/.*plugins=.*/plugins=(git zsh_reload colored-man-pages zsh-syntax-highlighting)/' ~/.zshrc
 sed -i 's/.*ZSH_THEME=.*/ZSH_THEME=ys/' ~/.zshrc
 
+echo "export LC_ALL=C" >> ~/.zshrc
 source ~/.zshrc
