@@ -1,6 +1,6 @@
 #! /bin/bash
 
-sh `dirname $0`/touch_tool.sh zsh
+sh `dirname $0`/../util/touch_tool.sh zsh
 
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
