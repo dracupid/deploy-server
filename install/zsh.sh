@@ -9,10 +9,10 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH}/custom/plugins/zsh-syntax-highlighting
 
 # update ~/.zshrc
-if [[ "$OSTYPE" = darwin* ]] ; then
-    $file=""
-fi
-sed -i $file 's/.*plugins=.*/plugins=(git zsh_reload colored-man-pages zsh-syntax-highlighting)/' ~/.zshrc
-sed -i $file 's/.*ZSH_THEME=.*/ZSH_THEME=ys/' ~/.zshrc
+# if [[ "$OSTYPE" = darwin* ]] ; then
+#     $file=""
+# fi
+sed -i 's/.*plugins=.*/plugins=(git zsh_reload colored-man-pages zsh-syntax-highlighting)/' ~/.zshrc
+sed -i 's/.*ZSH_THEME=.*/ZSH_THEME=ys/' ~/.zshrc
 
 source ~/.zshrc
