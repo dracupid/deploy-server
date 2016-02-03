@@ -16,7 +16,7 @@ cd ~/deploy-server
 ./init/163-source.sh
 
 # 安装add-apt-repository
-./util/touch_tool add-apt-repository python-software-properties
+./util/touch_tool add-apt-repository software-properties-common
 # 添加最新版本软件的更新仓库
 ./init/ppa.sh
 

@@ -21,4 +21,5 @@ else
         install $1 $2 $3
     else
         install $1 $2
+    fi
 fi
