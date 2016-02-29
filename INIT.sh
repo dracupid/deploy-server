@@ -13,7 +13,7 @@ git clone https://github.com/dracupid/deploy-server.git ~/deploy-server
 cd ~/deploy-server
 
 # use 163 ubuntu mirror
-./init/163-source.sh
+# ./init/163-source.sh
 
 # 安装add-apt-repository
 ./util/touch_tool add-apt-repository software-properties-common

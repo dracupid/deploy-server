@@ -5,7 +5,7 @@
 install() {
     hash $1 >/dev/null 2>&1 || {
         echo "$1 is not installed, installing..."
-        sudo apt-get install -y $2
+        sudo apt-get install -y $2 $3
         exit 0
     }
     echo "$1 has be installed."
